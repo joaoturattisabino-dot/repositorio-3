@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tech - Mostra Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Tela Inicial -->
+        <div id="start-screen" class="screen active">
+            <h1>🎮 Tech Quiz</h1>
+            <p>Descubra se você está pronto para ser um monitor de tecnologia! Responda rápido antes que o tempo acabe.</p>
+            <button id="start-btn" class="btn">Iniciar Desafio</button>
+        </div>
+
+        <!-- Tela do Jogo -->
+        <div id="game-screen" class="screen">
+            <div class="quiz-header">
+                <div class="score-box">Pontos: <span id="score">0</span></div>
+                <div class="timer-box">⏳ <span id="timer">15</span>s</div>
+            </div>
+            
+            <div class="progress-bar"><div id="progress"></div></div>
+
+            <h2 id="question-text">Pergunta aqui?</h2>
+            
+            <div id="options-container" class="options-grid">
+                <!-- As alternativas serão geradas via JavaScript -->
+            </div>
+        </div>
+
+        <!-- Tela Final -->
+        <div id="end-screen" class="screen">
+            <h2>🏆 Desafio Concluído!</h2>
+            <p class="final-result">Você fez <span id="final-score">0</span> pontos.</p>
+            <p id="feedback-text"></p>
+            
+            <div class="cta-box">
+                <h3>E agora?</h3>
+                <p>Venha conhecer o nosso <strong>Site de Monitoria</strong> e veja como ajudamos alunos a dominarem esses conceitos!</p>
+            </div>
+            
+            <button id="restart-btn" class="btn secondary">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
